@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @order.city %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @order.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @order.last_name %>
+</p>
+
+<p>
+  <strong>Unit sold:</strong>
+  <%= @order.unit_sold %>
+</p>
+
+<p>
+  <strong>Unit price:</strong>
+  <%= @order.unit_price %>
+</p>
+
+<p>
+  <strong>Total revenue:</strong>
+  <%= @order.total_revenue %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @order.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @order.longitude %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @order.product_id %>
+</p>
+
+
+<p>
+<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{@order.latitude},#{@order.longitude}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

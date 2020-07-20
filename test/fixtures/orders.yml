@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  first_name: MyString
+  last_name: MyString
+  unit_sold: 1
+  unit_price: 9.99
+  total_revenue: 9.99
+  latitude: 1.5
+  longitude: 1.5
+  product_id: 1
+
+two:
+  city: MyString
+  first_name: MyString
+  last_name: MyString
+  unit_sold: 1
+  unit_price: 9.99
+  total_revenue: 9.99
+  latitude: 1.5
+  longitude: 1.5
+  product_id: 1
